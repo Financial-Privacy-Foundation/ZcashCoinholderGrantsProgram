@@ -1,5 +1,5 @@
-name: Coinholder Retroactive Grant Application
-description: Submit a retroactive grant application to the Coinholder Retroactive Grants Program (name TBD)
+name: Lockbox: Coinholder Retroactive Grant Application
+description: Submit a retroactive grant application to the Lockbox: Coinholder Retroactive Grants Program
 title: Retroactive Grant Application - {Application Name}
 labels: ["Pending Retroactive Grant Application"]
 body:
@@ -17,12 +17,10 @@ body:
         - label: "I agree to the [Grant Agreement](https://9ba4718c-5c73-47c3-a024-4fc4e5278803.usrfiles.com/ugd/9ba471_f81ef4e4b5f040038350270590eb2e42.pdf) terms if funded"
         - label: "I agree to [Provide KYC information](https://9ba4718c-5c73-47c3-a024-4fc4e5278803.usrfiles.com/ugd/9ba471_7d9e73d16b584a61bae92282b208efc4.pdf) if funded above $50,000 USD"
         - label: "I agree to disclose conflicts of interest"
-        - label: "I agree to adhere to the [Code of Conduct](https://forum.zcashcommunity.com/t/zcg-code-of-conduct/41787) and [Communication Guidelines](https://forum.zcashcommunity.com/t/zcg-communication-guidelines/44284)"
-        - label: "I understand all milestone deliverables will be validated and accepted by their intended users or their representatives, who will confirm that the deliverables meet the required quality, functionality, and usability for each user story."
+        - label: "I understand that this grant program is only eligible for completed work, as it is a retroactive grant program. Applications for planned or partially completed work will not be considered. All completed work will be verified and accepted by its intended users or their representatives, who will confirm that the outputs meet the required quality, functionality, and usability before the work is listed as an option for Coinholder voting."
         - label: "I agree that for any new open-source software, I will create a CONTRIBUTING.md file that reflects the high standards of Zcash development, using the [`librustzcash` style guides](https://github.com/zcash/librustzcash/blob/main/CONTRIBUTING.md#styleguides) as a primary reference."
         - label: "I understand when contributing to existing Zcash code, I am required to adhere to the project specific contribution guidelines, paying close attention to any [merge](https://github.com/zcash/librustzcash/blob/main/CONTRIBUTING.md#merge-workflow), [branch](https://github.com/zcash/librustzcash/blob/main/CONTRIBUTING.md#branch-history), [pull request](https://github.com/zcash/librustzcash/blob/main/CONTRIBUTING.md#pull-request-review), and [commit](https://github.com/zcash/librustzcash/blob/main/CONTRIBUTING.md#commit-messages) guidelines as exemplified in the librustzcash repository."
-        - label: "I agree to post request details on the Community Forum](https://forum.zcashcommunity.com/c/grants/33)"
-        - label: "I understand it is my responsibility to post a link to this issue on the [Zcash Community Forums](https://forum.zcashcommunity.com/c/grants/33) after this application has been submitted so the community can give input. I understand this is required in order for the community to discuss and vote on this grant application."
+        - label: "I understand all grants are valued in USD but will be disbursed in Shielded ZEC. I acknowledge and accept that disbursement amounts may fluctuate based on the ZEC/USD exchange rate at the time of payment."
     validations:
       required: true
 
@@ -68,7 +66,7 @@ body:
   - type: input
     id: discovery
     attributes:
-      label: "How did you learn about the Coinholder Retroactive Grants Program (name TBD)"
+      label: "How did you learn about the Lockbox: Coinholder Retroactive Grants Program?"
       description: "Help us understand how applicants discover this program"
     validations:
       required: true
@@ -127,6 +125,15 @@ body:
     attributes:
       label: "Technical Approach (how you did it)"
       description: "Outline the technical methodology, tools, architecture, and process you used. Include key updates, dates, or versions if relevant."
+    validations:
+      required: true
+
+  - type: input
+    id: time_period
+    attributes:
+      label: "Time Period of Work Completion"
+      description: "Specify the time period during which this work was completed (e.g., Q3 2024, July 2024 - September 2024)"
+      placeholder: "ex. Q3 2024 or July 2024 - September 2024"
     validations:
       required: true
 
@@ -213,5 +220,19 @@ body:
           - [Release](https://) - details
         - Other Evidence:
           - [Other](https://) - details
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: '## Zcash Community Forums Post Requirement'
+
+  - type: checkboxes
+    id: forum_post_requirement
+    attributes:
+      label: "Community Forum Posting"
+      description: "Please confirm you will post to the Zcash Community Forums"
+      options:
+        - label: "I understand it is my responsibility to post a link to this issue on the [Zcash Community Forums](https://forum.zcashcommunity.com/c/grants/33) after this application has been submitted so the community can give input. I understand this is required in order for the community to discuss and vote on this grant application. Note: If you are unable to post on the forum (for example, due to new user restrictions), please leave a comment below, and we will adjust your posting permissions."
     validations:
       required: true
