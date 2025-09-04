@@ -1,0 +1,217 @@
+name: Coinholder Retroactive Grant Application
+description: Submit a retroactive grant application to the Coinholder Retroactive Grants Program (name TBD)
+title: Retroactive Grant Application - {Application Name}
+labels: ["Pending Retroactive Grant Application"]
+body:
+
+  - type: markdown
+    attributes:
+      value: '## Terms and Conditions'
+
+  - type: checkboxes
+    id: terms_and_conditions_checkboxes
+    attributes:
+      label: "Terms and Conditions"
+      description: "Please review and accept all terms and conditions before proceeding"
+      options:
+        - label: "I agree to the [Grant Agreement](https://9ba4718c-5c73-47c3-a024-4fc4e5278803.usrfiles.com/ugd/9ba471_f81ef4e4b5f040038350270590eb2e42.pdf) terms if funded"
+        - label: "I agree to [Provide KYC information](https://9ba4718c-5c73-47c3-a024-4fc4e5278803.usrfiles.com/ugd/9ba471_7d9e73d16b584a61bae92282b208efc4.pdf) if funded above $50,000 USD"
+        - label: "I agree to disclose conflicts of interest"
+        - label: "I agree to adhere to the [Code of Conduct](https://forum.zcashcommunity.com/t/zcg-code-of-conduct/41787) and [Communication Guidelines](https://forum.zcashcommunity.com/t/zcg-communication-guidelines/44284)"
+        - label: "I understand all milestone deliverables will be validated and accepted by their intended users or their representatives, who will confirm that the deliverables meet the required quality, functionality, and usability for each user story."
+        - label: "I agree that for any new open-source software, I will create a CONTRIBUTING.md file that reflects the high standards of Zcash development, using the [`librustzcash` style guides](https://github.com/zcash/librustzcash/blob/main/CONTRIBUTING.md#styleguides) as a primary reference."
+        - label: "I understand when contributing to existing Zcash code, I am required to adhere to the project specific contribution guidelines, paying close attention to any [merge](https://github.com/zcash/librustzcash/blob/main/CONTRIBUTING.md#merge-workflow), [branch](https://github.com/zcash/librustzcash/blob/main/CONTRIBUTING.md#branch-history), [pull request](https://github.com/zcash/librustzcash/blob/main/CONTRIBUTING.md#pull-request-review), and [commit](https://github.com/zcash/librustzcash/blob/main/CONTRIBUTING.md#commit-messages) guidelines as exemplified in the librustzcash repository."
+        - label: "I agree to post request details on the Community Forum](https://forum.zcashcommunity.com/c/grants/33)"
+        - label: "I understand it is my responsibility to post a link to this issue on the [Zcash Community Forums](https://forum.zcashcommunity.com/c/grants/33) after this application has been submitted so the community can give input. I understand this is required in order for the community to discuss and vote on this grant application."
+    validations:
+      required: true
+
+  - type: input
+    id: assignees
+    attributes:
+      label: "Application Owners (@octocat, @octocat1)"
+      description: "GitHub usernames of all individuals responsible for this application"
+      placeholder: "@octocat, @octocat1"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: '## Applicant & Organization'
+
+  - type: input
+    id: organization_or_individual_name
+    attributes:
+      label: "Organization or Individual Name"
+      description: "Name of the organization or individual applying for the grant"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_team_members
+    attributes:
+      label: "Additional Team Members"
+      description: "List all other team members and their roles in the project. If you are the only individual for the project, write “None” or “N/A”."
+      value: |
+        - Name:
+          Role:
+          Background:
+          Responsibilities:
+        - Name:
+          Role:
+          Background:
+          Responsibilities:
+      render: team-members.yaml
+    validations:
+      required: true
+
+  - type: input
+    id: discovery
+    attributes:
+      label: "How did you learn about the Coinholder Retroactive Grants Program (name TBD)"
+      description: "Help us understand how applicants discover this program"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: '## Project Overview'
+
+  - type: input
+    id: requested_grant_amount_usd
+    attributes:
+      label: "Requested Grant Amount (USD)"
+      description: "Total funding amount requested in US Dollars"
+      placeholder: "ex. $50,000"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Category"
+      description: "Select the category that best fits your work"
+      options:
+        - Infrastructure
+        - Community
+        - Education
+        - Non-Wallet Applications
+        - Integration
+        - Wallets
+        - Research & Development
+        - Media
+        - Zcash Protocol Extension
+        - Dedicated Resource
+        - Event Sponsorships
+    validations:
+      required: true
+
+  - type: textarea
+    id: project_summary
+    attributes:
+      label: "Project Summary"
+      description: "Provide a brief summary/elevator pitch of your project in 1–2 sentences"
+    validations:
+      required: true
+
+  - type: textarea
+    id: project_description
+    attributes:
+      label: "Project Description"
+      description: "Provide a comprehensive overview of the project and its goals"
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_approach
+    attributes:
+      label: "Technical Approach (how you did it)"
+      description: "Outline the technical methodology, tools, architecture, and process you used. Include key updates, dates, or versions if relevant."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: '## Budget & Funding'
+
+  - type: input
+    id: total_budget_usd
+    attributes:
+      label: "Total Budget (USD)"
+      description: "Total costs associated with the completed work"
+      placeholder: "ex. $50,000"
+    validations:
+      required: true
+
+  - type: textarea
+    id: budget_breakdown
+    attributes:
+      label: "Budget Breakdown"
+      description: "Break down total budget by category (e.g., compensation, technology, infrastructure, services, etc.)."
+      value: |
+        - Compensation:
+          - $(USD): null
+          - Justification: null
+        - Technology/Software:
+          - $(USD): null
+          - Justification: null
+        - Infrastructure/Hosting:
+          - $(USD): null
+          - Justification: null
+        - Services/Contractors:
+          - $(USD): null
+          - Justification: null
+        - Other:
+          - $(USD): null
+          - Justification: null
+        - Total $(USD): 
+    validations:
+      required: true
+
+  - type: dropdown
+    id: willing_partial_funding
+    attributes:
+      label: "Willing to take partial funding?"
+      options:
+        - "No"
+        - "Yes"
+    validations:
+      required: true
+
+  - type: input
+    id: willing_partial_funding_percent
+    attributes:
+      label: "If Yes, what % of the total would you accept?"
+      description: "Enter a number between 1 and 100 (leave blank if not applicable)"
+      placeholder: "ex. 50%"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: '## Impact & Evidence'
+
+  - type: textarea
+    id: success_metrics
+    attributes:
+      label: "Success Metrics"
+      description: "Explain how your project has brought value to the Zcash community. Include quantitative and/or qualitative metrics."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proof_of_completion
+    attributes:
+      label: "Proof of completion"
+      description: "Provide links to repositories, commits, publications, deployments, app listings, or other verifiable evidence."
+      value: |
+        - Repository/Commit:
+          - [Repository](https://) - details
+        - Publication:
+          - [Published](https://) - details
+        - Deployment/Release:
+          - [Release](https://) - details
+        - Other Evidence:
+          - [Other](https://) - details
+    validations:
+      required: true
