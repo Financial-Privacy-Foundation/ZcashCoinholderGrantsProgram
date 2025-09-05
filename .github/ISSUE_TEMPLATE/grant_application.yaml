@@ -100,7 +100,7 @@ body:
         - Media
         - Zcash Protocol Extension
         - Dedicated Resource
-        - Event Sponsorships
+        - Retroactive Event Funding
     validations:
       required: true
 
