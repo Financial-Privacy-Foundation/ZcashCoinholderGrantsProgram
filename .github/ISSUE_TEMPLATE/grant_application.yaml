@@ -175,25 +175,6 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: willing_partial_funding
-    attributes:
-      label: "Willing to take partial funding?"
-      options:
-        - "No"
-        - "Yes"
-    validations:
-      required: true
-
-  - type: input
-    id: willing_partial_funding_percent
-    attributes:
-      label: "If Yes, what % of the total would you accept?"
-      description: "Enter a number between 1 and 100 (leave blank if not applicable)"
-      placeholder: "ex. 50%"
-    validations:
-      required: false
-
   - type: markdown
     attributes:
       value: '## Impact & Evidence'
