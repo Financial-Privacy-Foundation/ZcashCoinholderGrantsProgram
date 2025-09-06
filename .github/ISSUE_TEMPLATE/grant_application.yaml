@@ -175,6 +175,44 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: budget_previous_funding
+    attributes:
+      label: Previous Funding
+      description: Indicate if you have received any previous funding from the Zcash Coinholder Grants Program
+      options:
+      - 'Yes'
+      - 'No'
+    validations:
+      required: true
+
+  - type: textarea
+    id: budget_previous_details
+    attributes:
+      label: Previous Funding Details
+      description: If you received previous funding, provide details about past grants and how this one differs
+    validations:
+      required: false
+
+  - type: dropdown
+    id: budget_other_sources
+    attributes:
+      label: Other Funding Sources
+      description: Indicate if you have or plan to receive funding from other sources
+      options:
+      - 'No'
+      - 'Yes'
+    validations:
+      required: true
+
+  - type: textarea
+    id: budget_other_sources_details
+    attributes:
+      label: Other Funding Sources Details
+      description: If you have of plan to recieve funding from other sources (e.g. Zcash Community Grants), provide details
+    validations:
+      required: false
+
   - type: markdown
     attributes:
       value: '## Impact & Evidence'
