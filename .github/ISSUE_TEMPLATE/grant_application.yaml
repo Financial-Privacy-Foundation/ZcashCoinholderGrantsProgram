@@ -247,7 +247,7 @@ body:
     attributes:
       label: "Conflict of Interest Disclosure"
       description: "Please disclose the nature of any actual, potential, or perceived conflicts of interest relevant to this application."
-      value: |
+      placeholder: |
         Our organization is one of the three keyholder organizations responsible for managing the distribution of funds via a legally binding multisig wallet. We will execute coinholder-approved funding decisions in accordance with the grant agreement.
     validations:
       required: false
