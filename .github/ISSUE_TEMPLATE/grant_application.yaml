@@ -14,7 +14,7 @@ body:
       label: "Terms and Conditions"
       description: "Please review and accept all terms and conditions before proceeding"
       options:
-        - label: "I agree to the [Grant Agreement](https://9ba4718c-5c73-47c3-a024-4fc4e5278803.usrfiles.com/ugd/9ba471_f81ef4e4b5f040038350270590eb2e42.pdf) terms if funded"
+        - label: "I agree to the [Grant Agreement](https://9ba4718c-5c73-47c3-a024-4fc4e5278803.usrfiles.com/ugd/9ba471_6ff6db4095fd4c4ba21babec361e927e.pdf) terms if funded"
         - label: "I agree to [Provide KYC information](https://9ba4718c-5c73-47c3-a024-4fc4e5278803.usrfiles.com/ugd/9ba471_7d9e73d16b584a61bae92282b208efc4.pdf) if funded above $50,000 USD"
         - label: "I agree to disclose conflicts of interest"
         - label: "I understand that this grant program is only eligible for completed work, as it is a retroactive grant program. Applications for planned or partially completed work will not be considered. All completed work will be verified and accepted by its intended users or their representatives, who will confirm that the outputs meet the required quality, functionality, and usability before the work is listed as an option for Coinholder voting."
