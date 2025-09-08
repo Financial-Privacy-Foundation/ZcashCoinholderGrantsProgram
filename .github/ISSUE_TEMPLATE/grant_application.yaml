@@ -248,7 +248,7 @@ body:
       label: "Conflict of Interest Disclosure"
       description: "Please disclose the nature of any actual, potential, or perceived conflicts of interest relevant to this application."
       placeholder: |
-        ex. Our organization is one of the three keyholder organizations responsible for managing the distribution of funds via a legally binding multisig wallet. We will execute coinholder-approved funding decisions in accordance with the grant agreement.
+        ex. Our organization is one of the three keyholder organizations responsible for managing the distribution of funds via a legally binding multisig wallet. We will execute coinholder-approved funding decisions in accordance with the relevant ZIPs.
     validations:
       required: false
 
@@ -262,6 +262,6 @@ body:
       label: "Community Forum Posting"
       description: "Please confirm you will post to the Zcash Community Forums"
       options:
-        - label: "I understand it is my responsibility to post a link to this issue on the [Zcash Community Forums](https://forum.zcashcommunity.com/c/grants/33) after this application has been submitted so the community can give input. I understand this is required in order for the community to discuss and vote on this grant application. Note: If you are unable to post on the forum (for example, due to new user restrictions), please leave a comment below, and we will adjust your posting permissions."
+        - label: "I understand it is my responsibility to post a link to this issue on the [Zcash Community Forums](https://forum.zcashcommunity.com/t/about-the-retroactive-grants-category/52106) after this application has been submitted so the community can give input. I understand this is required in order for the community to discuss and vote on this grant application. Note: If you are unable to post on the forum (for example, due to new user restrictions), please leave a comment below, and we will adjust your posting permissions."
     validations:
       required: true
