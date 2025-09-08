@@ -242,6 +242,16 @@ body:
     validations:
       required: true
 
+  - type: textarea
+    id: conflict_of_interest
+    attributes:
+      label: "Conflict of Interest Disclosure"
+      description: "Please disclose the nature of any actual, potential, or perceived conflicts of interest relevant to this application."
+      value: |
+        Our organization is one of the three keyholder organizations responsible for managing the distribution of funds via a legally binding multisig wallet. We will execute coinholder-approved funding decisions in accordance with the grant agreement.
+    validations:
+      required: false
+
   - type: markdown
     attributes:
       value: '## Zcash Community Forums Post Requirement'
